@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CB5BB03425605EF000D8B8A1 /* StateMachinesTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5BB02A25605EF000D8B8A1 /* StateMachinesTesting.framework */; };
-		CB5BB03925605EF000D8B8A1 /* StateMachinesTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BB03825605EF000D8B8A1 /* StateMachinesTestingTests.swift */; };
+		CB5BB03925605EF000D8B8A1 /* FridgeStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BB03825605EF000D8B8A1 /* FridgeStateMachineTests.swift */; };
 		CB5BB03B25605EF000D8B8A1 /* StateMachinesTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5BB02D25605EF000D8B8A1 /* StateMachinesTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB5BB04725605F1B00D8B8A1 /* FridgeStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5BB04625605F1B00D8B8A1 /* FridgeStateMachine.swift */; };
+		CBD73EFE25606469006C94CA /* DoorFridgeStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD73EFD25606469006C94CA /* DoorFridgeStateMachine.swift */; };
+		CBD73F02256064CC006C94CA /* DoorFridgeStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD73F01256064CC006C94CA /* DoorFridgeStateMachineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB1F7A532569377F005B4BBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CB5BB02A25605EF000D8B8A1 /* StateMachinesTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StateMachinesTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5BB02D25605EF000D8B8A1 /* StateMachinesTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachinesTesting.h; sourceTree = "<group>"; };
 		CB5BB02E25605EF000D8B8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5BB03325605EF000D8B8A1 /* StateMachinesTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachinesTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB5BB03825605EF000D8B8A1 /* StateMachinesTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachinesTestingTests.swift; sourceTree = "<group>"; };
+		CB5BB03825605EF000D8B8A1 /* FridgeStateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeStateMachineTests.swift; sourceTree = "<group>"; };
 		CB5BB03A25605EF000D8B8A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5BB04625605F1B00D8B8A1 /* FridgeStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeStateMachine.swift; sourceTree = "<group>"; };
+		CBD73EFD25606469006C94CA /* DoorFridgeStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorFridgeStateMachine.swift; sourceTree = "<group>"; };
+		CBD73F01256064CC006C94CA /* DoorFridgeStateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorFridgeStateMachineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 		CB5BB02025605EF000D8B8A1 = {
 			isa = PBXGroup;
 			children = (
+				CB1F7A532569377F005B4BBF /* README.md */,
 				CB5BB02C25605EF000D8B8A1 /* StateMachinesTesting */,
 				CB5BB03725605EF000D8B8A1 /* StateMachinesTestingTests */,
 				CB5BB02B25605EF000D8B8A1 /* Products */,
@@ -72,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				CB5BB02D25605EF000D8B8A1 /* StateMachinesTesting.h */,
+				CB5BB04625605F1B00D8B8A1 /* FridgeStateMachine.swift */,
+				CBD73EFD25606469006C94CA /* DoorFridgeStateMachine.swift */,
 				CB5BB02E25605EF000D8B8A1 /* Info.plist */,
 			);
 			path = StateMachinesTesting;
@@ -80,7 +90,8 @@
 		CB5BB03725605EF000D8B8A1 /* StateMachinesTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				CB5BB03825605EF000D8B8A1 /* StateMachinesTestingTests.swift */,
+				CB5BB03825605EF000D8B8A1 /* FridgeStateMachineTests.swift */,
+				CBD73F01256064CC006C94CA /* DoorFridgeStateMachineTests.swift */,
 				CB5BB03A25605EF000D8B8A1 /* Info.plist */,
 			);
 			path = StateMachinesTestingTests;
@@ -147,6 +158,7 @@
 				TargetAttributes = {
 					CB5BB02925605EF000D8B8A1 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					CB5BB03225605EF000D8B8A1 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD73EFE25606469006C94CA /* DoorFridgeStateMachine.swift in Sources */,
+				CB5BB04725605F1B00D8B8A1 /* FridgeStateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5BB03925605EF000D8B8A1 /* StateMachinesTestingTests.swift in Sources */,
+				CBD73F02256064CC006C94CA /* DoorFridgeStateMachineTests.swift in Sources */,
+				CB5BB03925605EF000D8B8A1 /* FridgeStateMachineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +356,7 @@
 		CB5BB03F25605EF000D8B8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EWA2VG7634;
@@ -357,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.killobatt.StateMachinesTesting;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +382,7 @@
 		CB5BB04025605EF000D8B8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EWA2VG7634;
@@ -389,6 +407,7 @@
 		CB5BB04225605EF000D8B8A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWA2VG7634;
 				INFOPLIST_FILE = StateMachinesTestingTests/Info.plist;
@@ -407,6 +426,7 @@
 		CB5BB04325605EF000D8B8A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWA2VG7634;
 				INFOPLIST_FILE = StateMachinesTestingTests/Info.plist;
